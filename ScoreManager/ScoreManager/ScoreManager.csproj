@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>ScoreManager</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Imgs\OVR.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
+    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="18.4.0.35" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="18.4.0.35" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="18.4.0.35" />
+    <PackageReference Include="Syncfusion.Themes.MaterialLightBlue.WPF" Version="18.4.0.35" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\ScoreManager.Modules.Register\ScoreManager.Modules.Register.csproj" />
+    <ProjectReference Include="..\ScoreManager.Core\ScoreManager.Core.csproj" />
+    <ProjectReference Include="..\Modules\ScoreManager.Modules.BasicInfo\ScoreManager.Modules.BasicInfo.csproj" />
+    <ProjectReference Include="..\Services\ScoreManager.Services.Interfaces\ScoreManager.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\ScoreManager.Services\ScoreManager.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Imgs\OVR.ico" />
+  </ItemGroup>
+</Project>
